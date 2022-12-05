@@ -1,0 +1,269 @@
+:root
+{
+    --primary : #043577;
+    --second : rgb(220, 232, 247);
+    --gray : #A9A8A8;
+}
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    font-family: 'Satoshi Regular', sans-serif;
+}
+figure img
+{
+    width: 100%;
+}
+.container
+{
+    width: 1200px;
+    margin: auto;
+}
+.btn
+{
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+.bg-primary
+{
+    background-color: var(--primary);
+}
+/* End generals styles */
+header
+{
+    border: 1px red solid;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    background-color: white;
+}
+header nav 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav figure
+{
+    width: 200px;
+}
+.menu
+{
+    min-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu li
+{
+    display: inline-block;
+}
+.menu li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.nav-bar
+{
+    width: 50px;
+}
+.nav-bar span
+{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 10px;
+}
+.nav-bar span:nth-child(2)
+{
+    width: 80%;
+    transition: all 0.5s;
+}
+.nav-bar:hover span:nth-child(2)
+{
+    width: 100%;
+}
+.end-menu
+{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-phone
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 20px 20px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.btn-phone i 
+{
+    font-size: 30px;
+}
+/* Slides */
+.rslides 
+{
+    margin: 0 auto;
+}
+.rslides_container 
+{
+    margin-bottom: 50px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+  
+.rslides1_nav 
+{
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,.8);
+    top: 50%;
+    left: 0;
+    z-index: 99;
+    opacity: 0.5;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 40px;
+    background: url("../img/slides/themes.gif") no-repeat left top;
+    margin-top: -45px;
+    padding: 20px;
+    border: 1px white solid;
+}
+  
+.rslides1_nav:active 
+{
+    opacity: 1.0;
+}
+  
+.rslides1_nav.next 
+{
+    left: auto;
+    background-position: right top;
+    right: 0;
+}
+  
+.rslides2_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 0;
+    left: 0;
+    display: block;
+    background: #fff; /* Fix for IE6-9 */
+    opacity: 0;
+    filter: alpha(opacity=1);
+    width: 48%;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 91%;
+}
+
+.rslides2_nav.next {
+    left: auto;
+    right: 0;
+}
+.rslides1_nav:focus,
+.rslides2_nav:focus
+{
+    outline: none;
+}
+  
+.rslides_tabs 
+{
+    margin-top: 10px;
+    text-align: center;
+}
+  
+.rslides_tabs li 
+  {
+    display: inline;
+    float: none;
+    _float: left;
+    *float: left;
+    margin-right: 5px;
+}
+  
+.rslides_tabs a 
+{
+    text-indent: -9999px;
+    overflow: hidden;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #ccc;
+    background: rgba(0,0,0, .2);
+    display: inline-block;
+    _display: block;
+    *display: block;
+    -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+    box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+    width: 9px;
+    height: 9px;
+}
+  
+.rslides_tabs .rslides_here a 
+{
+    background: #222;
+    background: rgba(0,0,0, .8);
+}
+  
+.caption 
+{
+    position: absolute;
+    display: block;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    width: 800px;
+    margin: auto;    
+    font-family: 'Satoshi Black', sans-serif;
+    font-weight: bold;
+}
+.caption h1
+{
+    font-size: 65px;
+    line-height: 80px;
+}
+.caption small
+{
+    display: block;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.caption a
+{
+    margin-top: 40px;
+    text-decoration: none;
+    color: white;
+}
+.rslides li img
+{
+    width: 100%;
+}
+/* Services */
+.services
+{
+    position: relative;
+    background-color: var(--primary);
+}
