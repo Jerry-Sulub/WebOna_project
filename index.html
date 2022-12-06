@@ -13,6 +13,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/mobile.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="assets/libs/wow.min.js"></script>
   <!-- JQuery -->
   <script src='https://code.jquery.com/jquery-3.6.1.js' crossorigin='anonymous'></script>
   <!-- Rslides -->
@@ -33,6 +36,8 @@
         }
       });
     });
+
+    new WOW().init();
   </script>
 </head>
 
@@ -40,7 +45,9 @@
   <!-- Aside Mobile -->
   <aside id="two">
     <figure>
+      <a href="/">
       <img src="assets/img/logo.png" alt="logo">
+      </a>
       <ul>
         <li>
           <a href="#" class="no-decoration semi-bold">
@@ -63,7 +70,9 @@
   <!-- Aside Desktop -->
   <aside id="one">
     <figure>
+      <a href="/">
       <img src="assets/img/logo.png" alt="logo">
+    </a>
     </figure>
     <br>
     <h1 class="primary">
@@ -107,12 +116,13 @@
   <header>
     <nav class="container">
       <figure>
+        <a href="/">
         <img src="assets/img/logo.png" alt="logo">
+      </a>
       </figure>
       <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <div class="end-menu">
@@ -174,31 +184,31 @@
   <section class="services">
     <div class="item-services container">
       <div class="row-top">
-        <article class="card-services">
+        <article class="card-services animate__animated animate__bounceIn animate__delay-2s">
           <i class="fa-solid fa-database primary"></i>
           <h4>
             Server and Storage
           </h4>
         </article>
-        <article class="card-services">
+        <article class="card-services animate__animated animate__bounceIn animate__delay-2s">
           <i class="fa-solid fa-server primary"></i>
           <h4>
             IT Support Services
           </h4>
         </article>
-        <article class="card-services">
+        <article class="card-services animate__animated animate__bounceIn animate__delay-2s">
           <i class="fa-solid fa-computer primary"></i>
           <h4>
             Desktop and Server
           </h4>
         </article>
-        <article class="card-services">
+        <article class="card-services animate__animated animate__bounceIn animate__delay-2s">
           <i class="fa-solid fa-server primary"></i>
           <h4>
             Network & Security
           </h4>
         </article>
-        <article class="card-services">
+        <article class="card-services animate__animated animate__bounceIn animate__delay-2s">
           <i class="fa-solid fa-network-wired primary"></i>
           <h4>
             Cloud Services
@@ -206,7 +216,7 @@
         </article>
       </div>
       <div class="row-bottom">
-        <article class="card-services">
+        <article class="card-services animate__animated animate__bounceIn animate__delay-2s">
           <i class="fa-solid fa-server primary"></i>
           <h4>
             Tracing Solutions
@@ -215,10 +225,10 @@
       </div>
     </div>
     <div class="footer-services container white">
-      <h1>
+      <h1 class="wow animate__animated animate__slideInLeft animate__delay-2s">
         We encourage you to review our Best IT Solutions for Business, Personal individuals.
       </h1>
-      <a href="#" class="btn white no-decoration">
+      <a href="#" class="btn white no-decoration wow animate__animated animate__slideInRight animate__delay-2s">
         View All Services
         <i class="fa-solid fa-arrow-right"></i>
       </a>
@@ -246,7 +256,7 @@
         <figure>
           <img src="assets/img/divider.jpg" alt="divider">
         </figure>
-        <article>
+        <article class="wow animate__animated animate__slideInRight animate__delay-2s">
           <figure>
             <img src="assets/img/about/server.png" alt="servre">
           </figure>
@@ -259,7 +269,7 @@
             </p>
           </div>
         </article>
-        <article>
+        <article class="wow animate__animated animate__slideInRight animate__delay-2s">
           <figure>
             <img src="assets/img/about/server.png" alt="servre">
           </figure>
@@ -272,7 +282,7 @@
             </p>
           </div>
         </article>
-        <article>
+        <article class="wow animate__animated animate__slideInRight animate__delay-2s">
           <figure>
             <img src="assets/img/about/server.png" alt="servre">
           </figure>
@@ -285,7 +295,7 @@
             </p>
           </div>
         </article>
-        <a href="#" class="btn bg-primary white no-decoration">
+        <a href="#" class="btn bg-primary white no-decoration wow animate__animated animate__slideInRight animate__delay-2s">
           Get Know us
           <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -295,19 +305,19 @@
   <!-- Solutions -->
   <section class="solutions">
     <div class="solutions-header container">
-      <h1>
+      <h1 class="wow animate__animated animate__fadeInUp animate__delay-2s">
         Our Services and Solutions
       </h1>
-      <small>
+      <small class="wow animate__animated animate__fadeInUp animate__delay-2s">
         Your IT Infrastructure is Entrusted to Us.
       </small>
       <br>
-      <a href="#" class="btn">
+      <a href="#" class="btn wow animate__animated animate__fadeInUp animate__delay-2s">
         Request Service
       </a>
     </div>
     <div class="item-solutions container">
-      <article>
+      <article class="wow animate__animated animate__rotateIn animate__delay-2s">
         <figure>
           <img src="assets/img/about/server.png" alt="">
         </figure>
@@ -322,7 +332,7 @@
           Request
         </a>
       </article>
-      <article>
+      <article class="wow animate__animated animate__rotateIn animate__delay-2s">
         <figure>
           <img src="assets/img/about/server.png" alt="">
         </figure>
@@ -337,7 +347,7 @@
           Request
         </a>
       </article>
-      <article>
+      <article class="wow animate__animated animate__rotateIn animate__delay-2s">
         <figure>
           <img src="assets/img/about/server.png" alt="">
         </figure>
@@ -352,7 +362,7 @@
           Request
         </a>
       </article>
-      <article>
+      <article class="wow animate__animated animate__rotateIn animate__delay-2s">
         <figure>
           <img src="assets/img/about/server.png" alt="">
         </figure>
@@ -367,7 +377,7 @@
           Request
         </a>
       </article>
-      <article>
+      <article class="wow animate__animated animate__rotateIn animate__delay-2s">
         <figure>
           <img src="assets/img/about/server.png" alt="">
         </figure>
@@ -382,7 +392,7 @@
           Request
         </a>
       </article>
-      <article>
+      <article class="wow animate__animated animate__rotateIn animate__delay-2s">
         <figure>
           <img src="assets/img/about/server.png" alt="">
         </figure>
@@ -402,20 +412,20 @@
   <!-- News -->
   <secttion class="news">
     <div class="header-news container text-center">
-      <figure class="bg-primary">
+      <figure class="bg-primary wow animate__animated animate__fadeInUp animate__delay-2s">
         <img src="assets/img/icons/recomendado.png" alt="recomended">
       </figure>
-      <h1 class="primary">
+      <h1 class="primary wow animate__animated animate__fadeInUp animate__delay-2s">
         Resent News & Articles
       </h1>
       <br>
-      <p>
+      <p class="wow animate__animated animate__fadeInUp animate__delay-2s">
         Be aware of developments in the digital world.
       </p>
     </div>
     <div class="news-body container">
       <br>
-      <div class="acordeon">
+      <div class="acordeon wow animate__animated animate__fadeInLeft  animate__delay-2s">
         <div class="acordeon_titulo titulo1 active primary">
           <h2>Expand Your Network</h2>
           <div class="iconos">
@@ -438,7 +448,7 @@
           </p>
         </div>
       </div>
-      <div class="acordeon">
+      <div class="acordeon wow animate__animated animate__fadeInLeft  animate__delay-2s">
         <div class="acordeon_titulo titulo2 primary">
           <h2>The Importance of Images for Website</h2>
           <div class="iconos">
@@ -461,7 +471,7 @@
           </p>
         </div>
       </div>
-      <div class="acordeon">
+      <div class="acordeon wow animate__animated animate__fadeInLeft  animate__delay-2s">
         <div class="acordeon_titulo titulo3 primary">
           <h2>What is a Website Prototype?</h2>
           <div class="iconos">
@@ -485,7 +495,7 @@
           </p>
         </div>
       </div>
-      <div class="acordeon">
+      <div class="acordeon wow animate__animated animate__fadeInLeft  animate__delay-2s">
         <div class="acordeon_titulo titulo4 primary">
           <h2>What is GTmetrix?</h2>
           <div class="iconos">
@@ -516,55 +526,55 @@
   <footer class="bg-primary white">
     <div class="footer-container container">
       <div class="fc-left">
-        <figure>
+        <figure class="wow animate__animated animate__fadeInUp  animate__delay-2s">
           <img src="assets/img/logo-footer.png" alt="logo">
         </figure>
-        <p>
+        <p class="wow animate__animated animate__fadeInUp  animate__delay-2s">
           <i class="fa-solid fa-location-dot"></i>
           New Jersey, USA
         </p>
-        <p>
+        <p class="wow animate__animated animate__fadeInUp  animate__delay-2s">
           <i class="fa-solid fa-phone-volume"></i>
           +1 (234) 567 89 10
         </p>
-        <p>
+        <p class="wow animate__animated animate__fadeInUp  animate__delay-2s">
           <i class="fa-solid fa-envelope"></i>
           example@example.com
         </p>
         <div class="icons">
-          <figure>
+          <figure class="wow animate__animated animate__fadeInUp  animate__delay-2s">
             <img src="assets/img/icons/facebook.png" alt="facebook">
           </figure>
-          <figure>
+          <figure class="wow animate__animated animate__fadeInUp  animate__delay-2s">
             <img src="assets/img/icons/instagram.png" alt="instagram">
           </figure>
-          <figure>
+          <figure class="wow animate__animated animate__fadeInUp  animate__delay-2s">
             <img src="assets/img/icons/twitter.png" alt="twitter">
           </figure>
         </div>
       </div>
       <div class="fc-center">
-        <h1>
+        <h1 class="wow animate__animated animate__fadeInUp  animate__delay-2s">
           Join Our Newsletter
         </h1>
         <br>
-        <p>
+        <p class="wow animate__animated animate__fadeInUp  animate__delay-2s">
           &nbsp;Subscribe to be informed about our services, products and important developments in the world of IT.
         </p>
         <br>
         <form action="#">
-          <input type="text" placeholder="Your Email Addres">
-          <a href="#" class="btn primary no-decoration text-center">
+          <input type="text" placeholder="Your Email Addres" class="wow animate__animated animate__fadeInUp  animate__delay-2s">
+          <a href="#" class="btn primary no-decoration text-center wow animate__animated animate__fadeInUp  animate__delay-2s">
             Subscribe <i class="fa-solid fa-arrow-right"></i>
           </a>
         </form>
       </div>
       <div class="fc-right">
         <div class="left">
-          <h1>
+          <h1 class="wow animate__animated animate__fadeInUp  animate__delay-2s">
             IT Services
           </h1>
-          <ul><br>
+          <ul class="wow animate__animated animate__fadeInUp  animate__delay-2s"><br>
             <li><span></span> Storage Systems</li>
             <li><span></span> IT Support Services</li>
             <li><span></span> Server Virtualization</li>
@@ -574,17 +584,17 @@
           </ul>
         </div>
         <div class="right">
-          <h1>
+          <h1 class="wow animate__animated animate__fadeInUp  animate__delay-2s">
             Quick Links
           </h1>
-          <ul><br>
+          <ul class="wow animate__animated animate__fadeInUp  animate__delay-2s"><br>
             <li><span></span><a href="#" class="no-decoration white">About Us</a></li>
             <li><span></span><a href="#" class="no-decoration white">Packages</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="copyright">
+    <div class="copyright wow animate__animated animate__fadeInUp  animate__delay-2s">
       © 2022 Webona - All Rights Reserved.
     </div>
   </footer>
