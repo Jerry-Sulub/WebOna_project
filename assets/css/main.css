@@ -3,6 +3,7 @@
     --primary : #043577;
     --second : rgb(220, 232, 247);
     --gray : #A9A8A8;
+    --blue-copy : #053b7d;
 }
 * 
 {
@@ -72,6 +73,10 @@ h4
 .no-decoration
 {
     text-decoration: none;
+}
+.text-center
+{
+    text-align: center;
 }
 /* End generals styles */
 header
@@ -323,6 +328,10 @@ header nav figure
     border: 1px white solid;
 }
 /* About */
+.about
+{
+    margin-bottom: 30px;
+}
 .about-info
 {
     display: flex;
@@ -463,6 +472,180 @@ header nav figure
 .item-solutions article:hover figure
 {
     display: none;
+}
+/* News */
+.header-news figure
+{
+    width: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 50px auto;
+}
+.acordeon
+{
+    margin-bottom: 40px;
+}
+.acordeon_titulo {
+    border-bottom: 1px var(--primary) solid;
+    background-color: white;
+    padding: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.acordeon_contenido {
+    display: none;
+    margin: 0;
+    padding: 30px;
+    line-height: 30px;
+}
+.acordeon_contenido figure {
+    width: 50%;
+    margin: auto;
+}
+.acordeon_contenido small
+{
+    display: block;
+    text-align: right;
+}
+.acordeon_contenido p
+{
+    display: block;
+    text-align: justify;
+}
+.show
+{
+    display: block;
+}
+.iconos
+{
+    position: relative;
+    padding:0;
+    width:15px;
+    height:15px;
+}
+.iconos i
+{
+    padding: 3px;
+    color: var(--primary);
+    border-radius: 5px;
+}
+.mas1, .mas2, .mas3, .mas4
+{
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    transition: all .3s;
+}
+.menos1, .menos2, .menos3, .menos4
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+}
+.desaparecer
+{
+    opacity: 0;
+}
+/* Footer */
+.footer-container
+{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.fc-left figure
+{
+    width: 250px;
+}
+.fc-left p
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.fc-left p:nth-child(2)
+{
+    margin-top: 40px;
+}
+.fc-left p i 
+{
+    padding-right: 5px;
+}
+.fc-left .icons
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.fc-left .icons figure
+{
+    width: 70px;
+    padding: 10px 20px;
+    border: 1px white solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fc-center
+{
+    max-width: 400px;
+}
+.fc-center form input
+{
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+}
+.fc-center form a
+{
+    margin-top: 10px;
+    display: block;
+    background-color: white;
+}
+.fc-center h1
+{
+    padding-top: 35px;
+}
+.fc-right
+{
+    padding-top: 35px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.fc-right .left h1, 
+.fc-right .right h1
+{
+    font-size: 30px;
+    text-align: left;
+}
+.fc-right .left ul, 
+.fc-right .right ul
+{
+    list-style: none;
+}
+.fc-right .left ul li, 
+.fc-right .right ul li
+{
+    padding: 5px 0px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fc-right .left ul li span,
+.fc-right .right ul li span
+{
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background-color: white;
 }
 @keyframes spin {
     100% 

@@ -101,4 +101,33 @@
     {
         padding: 0px 20px;
     }
+    /* Solutions */
+    .item-solutions
+    {
+        flex-direction: column;
+    }
+    .item-solutions article
+    {
+        width: 90%;
+    }
+    /* News */
+    .acordeon_contenido figure
+    {
+        width: 100%;
+    }
+    /* Footer */
+    .footer-container
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fc-center
+    {
+        width: 90%;
+    }
+    .fc-right
+    {
+        flex-direction: column;
+    }
 }
