@@ -130,4 +130,13 @@
     {
         flex-direction: column;
     }
+    #nav-desk
+    {
+        display: none;
+    }
+    #nav-mob
+    {
+        display: block;
+        width: 30px;
+    }
 }

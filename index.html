@@ -37,6 +37,72 @@
 </head>
 
 <body>
+  <!-- Aside Mobile -->
+  <aside id="two">
+    <figure>
+      <img src="assets/img/logo.png" alt="logo">
+      <ul>
+        <li>
+          <a href="#" class="no-decoration semi-bold">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="" class="no-decoration semi-bold">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="" class="no-decoration semi-bold">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </figure>
+  </aside>
+  <!-- Aside Desktop -->
+  <aside id="one">
+    <figure>
+      <img src="assets/img/logo.png" alt="logo">
+    </figure>
+    <br>
+    <h1 class="primary">
+      Contact Information
+    </h1>
+    <br>
+    <div class="item-contact">
+      <p>
+        <i class="fa-solid fa-phone-volume white bg-primary"></i>
+        <br>
+        +1 (234) 567 89 10
+      </p>
+      <p>
+        <i class="fa-solid fa-envelope white bg-primary"></i>
+        <br>
+        example@example.com
+      </p>
+      <p>
+        <i class="fa-solid fa-location-dot white bg-primary"></i>
+        <br>
+        New Jersey, USA
+      </p>
+    </div>
+    <div class="icons">
+      <figure>
+        <img src="assets/img/icons/facebook-blue.png" alt="facebook">
+      </figure>
+      <figure>
+        <img src="assets/img/icons/instagram-blue.png" alt="instagram">
+      </figure>
+      <figure>
+        <img src="assets/img/icons/twitter_blue.png" alt="twitter">
+      </figure>
+    </div>
+    <br>
+    <p class="primary semibold">
+      &copy;&nbsp;2022 - Webona
+    </p>
+  </aside>
   <!-- Navigation -->
   <header>
     <nav class="container">
@@ -50,7 +116,12 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <div class="end-menu">
-        <div class="nav-bar">
+        <div class="nav-bar" id="nav-desk">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-bar" id="nav-mob">
           <span></span>
           <span></span>
           <span></span>
@@ -513,6 +584,9 @@
         </div>
       </div>
     </div>
+    <div class="copyright">
+      © 2022 Webona - All Rights Reserved.
+    </div>
   </footer>
   <script>
     $(".mas1").toggleClass("desaparecer");
@@ -536,6 +610,32 @@
       $(".contenido4").slideToggle();
       $(".mas4").toggleClass("desaparecer");
     });
+
+    let desk = 0;
+    $("#nav-desk").click(() => {
+      if( desk == 0 )
+      {
+        $("#one").css('left', '0');
+        desk = 1;
+      }else
+      {
+        $("#one").css('left', '-200%');
+        desk = 0;
+      }
+    })
+
+    $("#nav-mob").click(() => {
+      if( desk == 0 )
+      {
+        $("#two").css('left', '0');
+        desk = 1;
+      }else
+      {
+        $("#two").css('left', '-200%');
+        desk = 0;
+      }
+    })
+    
   </script>
 </body>
 
