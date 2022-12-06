@@ -24,7 +24,7 @@ figure img
 }
 .container
 {
-    max-width: 1200px;
+    width: 1200px;
     margin: auto;
 }
 .btn
@@ -39,39 +39,7 @@ figure img
 }
 h1
 {
-    font-weight: 900;
-}
-h4
-{
     font-weight: 800;
-}
-.light
-{
-    font-weight: 300;
-}
-.normal
-{
-    font-weight: 400;
-}
-.semi-bold
-{
-    font-weight: 700;
-}
-.bold
-{
-    font-weight: 900;
-}
-.primary
-{
-    color: var(--primary);
-}
-.white
-{
-    color: white;
-}
-.no-decoration
-{
-    text-decoration: none;
 }
 /* End generals styles */
 header
@@ -204,6 +172,18 @@ header nav figure
 {
     margin:0px;
 }  
+.caption 
+{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px #333;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 .callbacks_nav 
 {
     position: absolute;
@@ -230,7 +210,6 @@ header nav figure
 }
 .caption 
 {
-    transform: translate(-50%, -50%);
     position: absolute;
     display: block;
     bottom: 0;
@@ -238,6 +217,7 @@ header nav figure
     right: 0;
     padding: 15px;
     text-align: center;
+    color: #fff;
     width: 800px;
     margin-left: 50%;
     font-family: 'Satoshi Black', sans-serif;
@@ -257,6 +237,8 @@ header nav figure
 .caption a
 {
     margin-top: 40px;
+    text-decoration: none;
+    color: white;
 }
 .rslides li img
 {
@@ -267,7 +249,7 @@ header nav figure
 {
     background-color: var(--primary);
     position: relative;
-    height: 260px;
+    height: 420px;
 }
 .item-services
 {
@@ -281,13 +263,16 @@ header nav figure
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    flex-direction: row;
+    flex-direction: column;
 }
 .row-top
 {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+}
+.row-bottom, .row-bottom article
+{
     width: 100%;
 }
 .card-services
@@ -299,6 +284,7 @@ header nav figure
 .card-services i
 {
     font-size: 60px;
+    color: var(--primary);
     margin-bottom: 20px;
 }
 .footer-services
@@ -311,6 +297,7 @@ header nav figure
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
 
     padding-bottom: 30px;
 }
@@ -320,6 +307,8 @@ header nav figure
 }
 .footer-services a
 {
+    color: white;
+    text-decoration: none;
     border: 1px white solid;
 }
 /* About */
@@ -334,6 +323,7 @@ header nav figure
 .about-left
 {
     position: relative;
+    width: 50%;
 }
 .about-left .back
 {
@@ -345,15 +335,22 @@ header nav figure
 }
 .about-right, .about-left
 {
-    width: 40%; 
+    width: 45%; 
 }
 .about-right
 {
-    padding: 0px 60px 0px 20px;
+    padding: 60px;
 }
 .about-right h1
 {
+    font-weight: 800;
+    color: var(--primary);
     margin-bottom: 30px;
+}
+.about-right p 
+{
+    font-size: 16px;
+    font-weight: 300;
 }
 .about-right figure
 {
@@ -375,7 +372,13 @@ header nav figure
 }
 .about-right article div h3
 {
+    color: var(--primary);
     margin-bottom: 10px;
+}
+.about-right a
+{
+    color: white;
+    text-decoration: none;
 }
 /* Solutions */
 .solutions
@@ -464,6 +467,9 @@ header nav figure
 {
     display: none;
 }
+
+/* Footer */
+
 @keyframes spin {
     100% 
     {

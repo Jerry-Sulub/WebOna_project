@@ -1,4 +1,8 @@
 @media screen and (max-width: 390px) {
+    .container
+    {
+        max-width: 390px;
+    }
     .menu
     {
         display: none;
@@ -6,5 +10,95 @@
     .end-menu .btn-phone
     {
         display: none;
+    }
+    nav
+    {
+        padding: 0px 20px;
+    }
+    /* Slides */
+    .caption
+    {
+        width: 100%;
+    }
+    .caption h1 
+    {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .callbacks_nav
+    {
+        display: none;
+    }
+    /* Services */
+    .services
+    {
+        height: auto;
+    }
+    .item-services
+    {
+        position: static;
+        flex-direction: column;
+    }
+    .row-top
+    {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 90%;
+        margin-top: 50px;
+    }
+    .row-bottom
+    {
+        width: 90%;
+    }
+    .card-services
+    {
+        padding: 60px;
+    }
+    .footer-services
+    {
+        padding: 20px 0px;
+        position: static;
+        flex-direction: column;
+    }
+    .footer-services h1
+    {
+        width: 90%;
+    }
+    .footer-services a 
+    {
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+    }
+    .about
+    {
+        overflow-x: hidden;
+    }
+    .about-info
+    {
+        flex-direction: column;
+    }
+    .about-left, .about-right
+    {
+        width: 100%;
+    }
+    .about-right article
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-right a
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about-right
+    {
+        padding: 0px 20px;
     }
 }

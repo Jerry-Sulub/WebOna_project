@@ -2,113 +2,324 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webona - Welcome</title>
-    <!-- Fonts -->
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,300,400&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
-    <!-- JQuery -->
-    <script src='https://code.jquery.com/jquery-3.6.1.js' crossorigin='anonymous'></script>
-    <!-- Rslides -->
-    <script src="assets/libs/responsiveslides.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webona - Welcome</title>
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,300,400&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
+  <!-- JQuery -->
+  <script src='https://code.jquery.com/jquery-3.6.1.js' crossorigin='anonymous'></script>
+  <!-- Rslides -->
+  <script src="assets/libs/responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>
-    <header>
-        <nav class="container">
-            <figure>
-                <img src="assets/img/logo.png" alt="logo">
-            </figure>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="end-menu">
-                <div class="nav-bar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="btn-phone">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    +1(234)5678910
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section class="rslides_container">
-        <ul id="slides1" class="rslides">
-            <li>
-                <img src="assets/img/slides/slide1.jpg" alt="slide1" />
-                <div class="caption">
-                    <h1>
-                        For Your Business Custom IT Solutions
-                    </h1>
-                    <small>
-                        We are at your service for all your IT Solutions.
-                    </small>                    
-                    <a href="#" class="btn bg-primary">
-                        Learn More
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <img src="assets/img/slides/slide2.jpg" alt="slide2" />
-                <div class="caption">
-                    <h1>
-                        We Add Value To Your Business
-                    </h1>
-                    <small>
-                        We meet all the IT infrastructure needs of your business.
-                    </small>
-                    <a href="#" class="btn bg-primary">
-                        Learn More
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>                
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="services">
-        <div class="container">
-            <div class="item-services">
-                <article>
-                    <i class="fa-solid fa-server"></i>
-                    <p>
-                        Server and Storage
-                    </p>
-                </article>
-                <article>
-                    <i class="fa-solid fa-server"></i>
-                    <p>
-                        Server and Storage
-                    </p>
-                </article>
-            </div>
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <figure>
+        <img src="assets/img/logo.png" alt="logo">
+      </figure>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="end-menu">
+        <div class="nav-bar">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </section>
-    <script>
-        $(function () {
-
-            // Slideshow 1
-            $("#slides1").responsiveSlides({
-                auto: true,
-                pagination: true,
-                nav: true,
-                fade: 500,
-            });
-
-        });
-    </script>
+        <div class="btn-phone">
+          <i class="fa-solid fa-phone-volume"></i>
+          +1(234)5678910
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Slide -->
+  <section class="slide">
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="assets/img/slides/slide1.jpg" alt="">
+          <div class="caption white">
+            <h1>
+              For your business custom IT solutions
+            </h1>
+            <small>
+              We are at your service for all your IT solutions.
+            </small>
+            <a href="#" class="btn bg-primary white no-decoration">
+              Learn More
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="assets/img/slides/slide2.jpg" alt="">
+          <div class="caption white">
+            <h1>
+              We add value to your business
+            </h1>
+            <small>
+              we meet all the IT infrastructure needs of your business.
+            </small>
+            <a href="#" class="btn bg-primary white no-decoration">
+              Learn More
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="services">
+      <div class="item-services container">
+        <div class="row-top">
+          <article class="card-services">
+            <i class="fa-solid fa-database primary"></i>
+            <h4>
+              Server and Storage
+            </h4>
+          </article>
+          <article class="card-services">
+            <i class="fa-solid fa-server primary"></i>
+            <h4>
+              IT Support Services
+            </h4>
+          </article>
+          <article class="card-services">
+            <i class="fa-solid fa-computer primary"></i>
+            <h4>
+              Desktop and Server
+            </h4>
+          </article>
+          <article class="card-services">
+            <i class="fa-solid fa-server primary"></i>
+            <h4>
+              Network & Security 
+            </h4>
+          </article>
+          <article class="card-services">
+            <i class="fa-solid fa-network-wired primary"></i>
+            <h4>
+              Cloud Services
+            </h4>
+          </article>
+        </div>
+        <div class="row-bottom">
+          <article class="card-services">
+            <i class="fa-solid fa-server primary"></i>
+            <h4>
+              Tracing Solutions
+            </h4>
+          </article>
+        </div>
+      </div>
+      <div class="footer-services container white">
+        <h1>
+          We encourage you to review our Best IT Solutions for Business, Personal individuals. 
+        </h1>
+        <a href="#" class="btn white no-decoration">
+          View All Services
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+  </section>
+  <!-- About -->
+  <section class="about">
+    <div class="about-info container">
+      <div class="about-left">
+        <figure class="back">
+          <img src="assets/img/technology.png" alt="back">
+        </figure>
+        <figure>
+          <img src="assets/img/webone-about.png" alt="we">
+        </figure>
+      </div>
+      <div class="about-right ">
+        <h1 class="primary">
+          Professional IT Service
+        </h1>
+        <p>
+          With our reliable service understanding and professional staff, we aim to present the expectations and requirements to the enterprises in the fastest way with technical support service.
+        </p>
+        <figure>
+          <img src="assets/img/divider.jpg" alt="divider">
+        </figure>
+        <article>
+          <figure>
+            <img src="assets/img/about/server.png" alt="servre">
+          </figure>
+          <div>
+            <h3 class="primary">
+              Corporate Consulting
+            </h3>
+            <p>
+              We create technological infrastructures that will accelerate your business processes.
+            </p>
+          </div>     
+        </article>
+        <article>
+          <figure>
+            <img src="assets/img/about/server.png" alt="servre">
+          </figure>
+          <div>
+            <h3 class="primary">
+              IT Service System
+            </h3>
+            <p>
+              It is the technical service we provide within the scope of IT support and maintenance.
+            </p>
+          </div>     
+        </article>
+        <article>
+          <figure>
+            <img src="assets/img/about/server.png" alt="servre">
+          </figure>
+          <div>
+            <h3 class="primary">
+              Innovate Solutions
+            </h3>
+            <p>
+              We produce solutions by closely following the innovations in the field of informatics.
+            </p>
+          </div>     
+        </article>
+        <a href="#" class="btn bg-primary white no-decoration">
+          Get Know us
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="solutions">
+    <div class="solutions-header container">
+      <h1>
+        Our Services and Solutions
+      </h1>
+      <small>
+        Your IT Infrastructure is Entrusted to Us.
+      </small>
+      <br>
+      <a href="#" class="btn">
+        Request Service
+      </a>
+    </div>
+    <div class="item-solutions container">
+      <article>
+        <figure>
+          <img src="assets/img/about/server.png" alt="">
+        </figure>
+        <h3>
+          Server and Storage Systems
+        </h3>
+        <p>
+          To provide great advantage by adding efficiency to business processes by solving problems with our Technology Services.                            
+        </p>
+        <a href="#" class="btn">
+          Request
+        </a>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/img/about/server.png" alt="">
+        </figure>
+        <h3>
+          Server and Storage Systems
+        </h3>
+        <p>
+          To provide great advantage by adding efficiency to business processes by solving problems with our Technology Services.                            
+        </p>
+        <a href="#" class="btn">
+          Request
+        </a>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/img/about/server.png" alt="">
+        </figure>
+        <h3>
+          Server and Storage Systems
+        </h3>
+        <p>
+          To provide great advantage by adding efficiency to business processes by solving problems with our Technology Services.                            
+        </p>
+        <a href="#" class="btn">
+          Request
+        </a>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/img/about/server.png" alt="">
+        </figure>
+        <h3>
+          Server and Storage Systems
+        </h3>
+        <p>
+          To provide great advantage by adding efficiency to business processes by solving problems with our Technology Services.                            
+        </p>
+        <a href="#" class="btn">
+          Request
+        </a>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/img/about/server.png" alt="">
+        </figure>
+        <h3>
+          Server and Storage Systems
+        </h3>
+        <p>
+          To provide great advantage by adding efficiency to business processes by solving problems with our Technology Services.                            
+        </p>
+        <a href="#" class="btn">
+          Request
+        </a>
+      </article>
+      <article>
+        <figure>
+          <img src="assets/img/about/server.png" alt="">
+        </figure>
+        <h3>
+          Server and Storage Systems
+        </h3>
+        <p>
+          To provide great advantage by adding efficiency to business processes by solving problems with our Technology Services.                            
+        </p>
+        <a href="#" class="btn">
+          Request
+        </a>
+      </article>
+    </div>
+  </section>
 </body>
 
 </html>
