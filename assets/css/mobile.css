@@ -178,4 +178,38 @@
         flex-direction: column;
         gap: 50px;
     }
+    /* CONTACT */
+    .comunication-body
+    {   
+        flex-direction: column;
+    }
+    .comunication-body p
+    {   
+        width: 90%;
+        margin: 30px 0px;
+    }
+    .video div iframe
+    {
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        height: 300px;
+    }
+    form
+    {
+        width: 90%;
+    }
+    .input-group
+    {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .input-group input
+    {
+        width: 100%;
+    }
+    .location div iframe
+    {
+        padding: 20px;
+    }
 }
