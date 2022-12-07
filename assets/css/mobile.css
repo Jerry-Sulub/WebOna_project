@@ -151,17 +151,31 @@
         width: 90%;
         height: auto;
     }
-    .back
+    .back-card
     {
         transform: rotateX(0deg);
     }
-    .front, .back
+    .front, .back-card
     {
         position: static;
     }
-    .back
+    .back-card
     {
         margin-top: 20px;
         text-align: center;
+    }
+    /* Slide */
+    #slider1, #slider1 .viewport
+    {
+        max-width: 390px;
+    }
+    #slider1 .overview li figure
+    {
+        filter: grayscale(0);
+    }
+    .experience .container
+    {
+        flex-direction: column;
+        gap: 50px;
     }
 }

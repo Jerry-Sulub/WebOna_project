@@ -4,6 +4,7 @@
     --second : rgb(220, 232, 247);
     --gray : #A9A8A8;
     --blue-copy : #053b7d;
+    --low-gray : rgb(250, 250, 250);
 }
 * 
 {
@@ -855,7 +856,7 @@ footer
 }
 #slider1 .viewport { 
     width: 1200px; 
-    height: 430px; 
+    height: 390px; 
     overflow: hidden; 
     position: relative; 
 }
@@ -876,8 +877,8 @@ footer
     margin: 30px 0 0 10px;
 }
 #slider1 .buttons:hover {
-    color: #C01313;
-    background: #fff;
+    color: white;
+    background: var(--primary);
 }
 #slider1 .disable { 
     visibility: hidden; 
@@ -936,6 +937,40 @@ footer
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+/* Experience */
+.experience
+{
+    background: rgb(250, 250, 250);
+    padding: 40px 0px;
+}
+.experience .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-experience figure
+{
+    width: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+.description-experience
+{
+    font-size: 30px;
+    text-align: center;
+}
+.description-experience hr
+{
+    display: block;
+    width: 50%;
+    height: 6px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    background-color: var(--primary);
 }
 @keyframes spin {
     100%
