@@ -177,6 +177,7 @@
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
         <a href="" class="btn bg-primary white no-decoration">
             Send Form 
+            <i class="fa-solid fa-arrow-right"></i>
         </a>
     </form>
   </section>
@@ -265,33 +266,9 @@
       © 2022 Webona - All Rights Reserved.
     </div>
   </footer>
-  <script>
-    let desk = 0;
-    $("#nav-desk").click(() => {
-      if( desk == 0 )
-      {
-        $("#one").css('left', '0');
-        desk = 1;
-      }else
-      {
-        $("#one").css('left', '-200%');
-        desk = 0;
-      }
-    })
-
-    $("#nav-mob").click(() => {
-      if( desk == 0 )
-      {
-        $("#two").css('left', '0');
-        desk = 1;
-      }else
-      {
-        $("#two").css('left', '-200%');
-        desk = 0;
-      }
-    })
-    
-  </script>
+  <i class="fa-solid fa-caret-up" id="arrow_up"></i>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/scroll.js"></script>
 </body>
 
 </html>
