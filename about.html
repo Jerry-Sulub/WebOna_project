@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="assets/css/mobile.css">
   <!-- Animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Fancybox Styles -->
+  <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.css">
   <script src="assets/libs/wow.min.js"></script>
   <!-- JQuery -->
   <script src='https://code.jquery.com/jquery-3.6.1.js' crossorigin='anonymous'></script>
@@ -22,11 +24,12 @@
   <script src="assets/libs/responsiveslides.min.js"></script>
   <!-- Tiny Carousel -->
   <script src="assets/libs/jquery.tinycarousel.js"></script>
+  <!-- Fancybox Js -->
+  <script src="assets/libs/fancybox/jquery.fancybox.js"></script>
   <script>
-    $(document).ready(function()
-	{
-		$('#slider1').tinycarousel();
-	});
+    $(document).ready(function () {
+      $('#slider1').tinycarousel();
+    });
     new WOW().init();
   </script>
 </head>
@@ -36,7 +39,7 @@
   <aside id="two">
     <figure>
       <a href="/">
-      <img src="assets/img/logo.png" alt="logo">
+        <img src="assets/img/logo.png" alt="logo">
       </a>
       <ul>
         <li>
@@ -61,8 +64,8 @@
   <aside id="one">
     <figure>
       <a href="/">
-      <img src="assets/img/logo.png" alt="logo">
-    </a>
+        <img src="assets/img/logo.png" alt="logo">
+      </a>
     </figure>
     <br>
     <h1 class="primary">
@@ -107,8 +110,8 @@
     <nav class="container">
       <figure>
         <a href="/">
-        <img src="assets/img/logo.png" alt="logo">
-      </a>
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
       </figure>
       <ul class="menu">
         <li><a href="/">Home</a></li>
@@ -132,11 +135,11 @@
         </div>
       </div>
     </nav>
-  </header>  
+  </header>
   <!-- Poster -->
   <section class="poster">
     <h1 class="white">
-        About Us
+      About Us
     </h1><br>
     <p class="white">Home > About Us</p>
   </section>
@@ -207,204 +210,218 @@
   <!-- Chars -->
   <section class="characters bg-primary">
     <div class="chars container">
-        <div class="flip-container wow animate__animated animate__slideInLeft animate__delay-3s">
-            <article>
-                <div class="front">
-                    <figure>
-                        <img src="assets/img/about/warranty.png" alt="warrant">
-                    </figure><br>
-                    <h1>
-                        Reliability
-                    </h1>
-                </div>
-                <div class="back-card">
-                    <h1>
-                        Reliability
-                    </h1>
-                    <br>
-                    <p>
+      <div class="flip-container wow animate__animated animate__slideInLeft animate__delay-3s">
+        <article>
+          <div class="front">
+            <figure>
+              <img src="assets/img/about/warranty.png" alt="warrant">
+            </figure><br>
+            <h1>
+              Reliability
+            </h1>
+          </div>
+          <div class="back-card">
+            <h1>
+              Reliability
+            </h1>
+            <br>
+            <p>
 
-                        We provide accurate, reliable and ethical services with our expert staff. We apply the fastest and most reliable methods for your brand.                                
-                    </p>
-                </div>
-            </article>
-        </div>
-        <div class="flip-container wow animate__animated animate__slideInLeft animate__delay-2s">
-            <article>
-                <div class="front">
-                    <figure>
-                        <img src="assets/img/about/badge.png" alt="badge">
-                    </figure><br>
-                    <h1>
-                        Loyalty
-                    </h1>
-                </div>
-                <div class="back-card">
-                    <h1>
-                        Loyalty
-                    </h1>
-                    <br>
-                    <p>
-                        Our long-term work continues until the job is finished. We establish solid and long-term relationships with all the companies we work with.                         
-                    </p>
-                </div>
-            </article>
-        </div>
-        <div class="flip-container wow animate__animated animate__slideInRight animate__delay-2s">
-            <article>
-                <div class="front">
-                    <figure>
-                        <img src="assets/img/about/badge (1).png" alt="badge1">
-                    </figure><br>
-                    <h1>
-                        Experience
-                    </h1>
-                </div>
-                <div class="back-card">
-                    <h1>
-                        Experience
-                    </h1>
-                    <br>
-                    <p>
-                        Thanks to the experience we have gained over the years, the specialist provides service with the latest technology devices.                    
-                    </p>
-                </div>
-            </article>
-        </div>
-        <div class="flip-container wow animate__animated animate__slideInRight animate__delay-3s">
-            <article>
-                <div class="front">
-                    <figure>
-                        <img src="assets/img/about/badge (2).png" alt="badge2">
-                    </figure><br>
-                    <h1>
-                        Support
-                    </h1>
-                </div>
-                <div class="back-card">
-                    <h1>
-                        Experience
-                    </h1>
-                    <br>
-                    <p>
-                        We accelerate your business processes by providing professional support. We solve your problems and provide instant solutions.                  
-                    </p>
-                </div>
-            </article>
-        </div>
+              We provide accurate, reliable and ethical services with our expert staff. We apply the fastest and most
+              reliable methods for your brand.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="flip-container wow animate__animated animate__slideInLeft animate__delay-2s">
+        <article>
+          <div class="front">
+            <figure>
+              <img src="assets/img/about/badge.png" alt="badge">
+            </figure><br>
+            <h1>
+              Loyalty
+            </h1>
+          </div>
+          <div class="back-card">
+            <h1>
+              Loyalty
+            </h1>
+            <br>
+            <p>
+              Our long-term work continues until the job is finished. We establish solid and long-term relationships
+              with all the companies we work with.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="flip-container wow animate__animated animate__slideInRight animate__delay-2s">
+        <article>
+          <div class="front">
+            <figure>
+              <img src="assets/img/about/badge (1).png" alt="badge1">
+            </figure><br>
+            <h1>
+              Experience
+            </h1>
+          </div>
+          <div class="back-card">
+            <h1>
+              Experience
+            </h1>
+            <br>
+            <p>
+              Thanks to the experience we have gained over the years, the specialist provides service with the latest
+              technology devices.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="flip-container wow animate__animated animate__slideInRight animate__delay-3s">
+        <article>
+          <div class="front">
+            <figure>
+              <img src="assets/img/about/badge (2).png" alt="badge2">
+            </figure><br>
+            <h1>
+              Support
+            </h1>
+          </div>
+          <div class="back-card">
+            <h1>
+              Experience
+            </h1>
+            <br>
+            <p>
+              We accelerate your business processes by providing professional support. We solve your problems and
+              provide instant solutions.
+            </p>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
   <!-- Personal -->
   <section class="personal">
     <br>
     <h1 class="primary text-center">
-        Generating Ideas is Teamwork
+      Generating Ideas is Teamwork
     </h1>
     <br>
     <p class="text-center">
-        We facilitate business processes by producing special ideas for each of our customers.
+      We facilitate business processes by producing special ideas for each of our customers.
     </p>
     <br>
     <div id="slider1">
-		<div class="contenedor_flechas">
-			<a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
-			<a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
-		</div>
-		<div class="viewport">
-			<ul class="overview">
-				<li>
-                    <figure>
-                        <img src="assets/img/personal/team1.png" alt="team">
-                    </figure>
-                    <div class="body_personal">
-                        <h1>
-                            Jack Smith
-                        </h1>
-                        <small>
-                            Ceo
-                        </small>
-                        <div class="icons-team">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                    </div>
-				</li>
-                <li>
-                    <figure>
-                        <img src="assets/img/personal/team2.png" alt="team2">
-                    </figure>
-                    <div class="body_personal">
-                        <h1>
-                            Adam Brown
-                        </h1>
-                        <small>
-                            Web Designer
-                        </small>
-                        <div class="icons-team">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                    </div>
-				</li>
-                <li>
-                    <figure>
-                        <img src="assets/img/personal/team3.png" alt="team3">
-                    </figure>
-                    <div class="body_personal">
-                        <h1>
-                            Michael Lee
-                        </h1>
-                        <small>
-                            Web Designer
-                        </small>
-                        <div class="icons-team">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                    </div>
-				</li>
-                <li>
-                    <figure>
-                        <img src="assets/img/personal/team4.png" alt="team4">
-                    </figure>
-                    <div class="body_personal">
-                        <h1>
-                            Robert Lee
-                        </h1>
-                        <small>
-                            Web Designer
-                        </small>
-                        <div class="icons-team">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                    </div>
-				</li>
-                <li>
-                    <figure>
-                        <img src="assets/img/personal/team5.png" alt="team5">
-                    </figure>
-                    <div class="body_personal">
-                        <h1>
-                            Olivia Lee
-                        </h1>
-                        <small>
-                            Web Designer
-                        </small>
-                        <div class="icons-team">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                    </div>
-				</li>
-			</ul>
-		</div>
-	</div>
+      <div class="contenedor_flechas">
+        <a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
+        <a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
+      </div>
+      <div class="viewport">
+        <ul class="overview">
+          <li>
+            <a href="assets/img/personal/team1.png" class="fancybox" title="Jack Smith - Ceo" rel="gallery1">
+              <figure>
+                <img src="assets/img/personal/team1.png" alt="team">
+              </figure>
+            </a>
+            <div class="body_personal">
+              <h1>
+                Jack Smith
+              </h1>
+              <small>
+                Ceo
+              </small>
+              <div class="icons-team">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="assets/img/personal/team2.png" class="fancybox" title=" Adam Brown - Web Designer" rel="gallery1">
+              <figure>
+                <img src="assets/img/personal/team2.png" alt="team2">
+              </figure>
+            </a>
+            <div class="body_personal">
+              <h1>
+                Adam Brown
+              </h1>
+              <small>
+                Web Designer
+              </small>
+              <div class="icons-team">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="assets/img/personal/team3.png" class="fancybox" title="Michael Lee - Web Designer" rel="gallery1">
+              <figure>
+                <img src="assets/img/personal/team3.png" alt="team3">
+              </figure>
+            </a>
+            <div class="body_personal">
+              <h1>
+                Michael Lee
+              </h1>
+              <small>
+                Web Designer
+              </small>
+              <div class="icons-team">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="assets/img/personal/team4.png" class="fancybox" title="Robert Lee - Web Designer" rel="gallery1">
+              <figure>
+                <img src="assets/img/personal/team4.png" alt="team4">
+              </figure>
+            </a>
+            <div class="body_personal">
+              <h1>
+                Robert Lee
+              </h1>
+              <small>
+                Web Designer
+              </small>
+              <div class="icons-team">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="assets/img/personal/team5.png" class="fancybox" title="Olivia Lee - Web Designer" rel="gallery1">
+              <figure>
+                <img src="assets/img/personal/team5.png" alt="team5">
+              </figure>
+            </a>
+            <div class="body_personal">
+              <h1>
+                Olivia Lee
+              </h1>
+              <small>
+                Web Designer
+              </small>
+              <div class="icons-team">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
   <!-- Experience -->
   <section class="experience">
@@ -477,7 +494,9 @@
   </section>
   <section class="video">
     <div class="container">
-      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cue244ySmWc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/cue244ySmWc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
   </section>
   <!-- Footer -->
@@ -521,8 +540,10 @@
         </p>
         <br>
         <form action="#">
-          <input type="text" placeholder="Your Email Addres" class="wow animate__animated animate__fadeInUp  animate__delay-2s">
-          <a href="#" class="btn primary no-decoration text-center wow animate__animated animate__fadeInUp  animate__delay-2s">
+          <input type="text" placeholder="Your Email Addres"
+            class="wow animate__animated animate__fadeInUp  animate__delay-2s">
+          <a href="#"
+            class="btn primary no-decoration text-center wow animate__animated animate__fadeInUp  animate__delay-2s">
             Subscribe <i class="fa-solid fa-arrow-right"></i>
           </a>
         </form>
@@ -557,33 +578,9 @@
       © 2022 Webona - All Rights Reserved.
     </div>
   </footer>
-  <script>
-    let desk = 0;
-    $("#nav-desk").click(() => {
-      if( desk == 0 )
-      {
-        $("#one").css('left', '0');
-        desk = 1;
-      }else
-      {
-        $("#one").css('left', '-200%');
-        desk = 0;
-      }
-    })
-
-    $("#nav-mob").click(() => {
-      if( desk == 0 )
-      {
-        $("#two").css('left', '0');
-        desk = 1;
-      }else
-      {
-        $("#two").css('left', '-200%');
-        desk = 0;
-      }
-    })
-    
-  </script>
+  <i class="fa-solid fa-caret-up" id="arrow_up"></i>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/scroll.js"></script>
 </body>
 
 </html>
