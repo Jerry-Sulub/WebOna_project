@@ -475,3 +475,15 @@ form a
     text-align: center;
     margin-top: 40px;
 }
+.alert_footer
+{
+    opacity: 0;
+    color: white;
+    transition: all 1s;
+}
+.alert
+{
+    opacity: 0;
+    color: red;
+    transition: all 1s;
+}

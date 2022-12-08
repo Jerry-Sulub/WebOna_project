@@ -167,7 +167,7 @@
         </figure>
         <article class="wow animate__animated animate__slideInRight animate__delay-2s">
           <figure>
-            <img src="assets/img/about/server.png" alt="servre">
+            <img src="assets/img/icons/corporate-culture_b.png" alt="servre">
           </figure>
           <div>
             <h3 class="primary">
@@ -180,7 +180,7 @@
         </article>
         <article class="wow animate__animated animate__slideInRight animate__delay-2s">
           <figure>
-            <img src="assets/img/about/server.png" alt="servre">
+            <img src="assets/img/icons/it-support_b.png" alt="servre">
           </figure>
           <div>
             <h3 class="primary">
@@ -193,7 +193,7 @@
         </article>
         <article class="wow animate__animated animate__slideInRight animate__delay-2s">
           <figure>
-            <img src="assets/img/about/server.png" alt="servre">
+            <img src="assets/img/icons/it-idea_b.png" alt="servre">
           </figure>
           <div>
             <h3 class="primary">
@@ -302,7 +302,7 @@
     </div>
   </section>
   <!-- Personal -->
-  <section class="personal">
+  <section class="personal wow animate__animated animate__fadeInUp animate__delay-2s">
     <br>
     <h1 class="primary text-center">
       Generating Ideas is Teamwork
@@ -426,7 +426,7 @@
   <!-- Experience -->
   <section class="experience">
     <div class="container">
-      <article class="card-experience">
+      <article class="card-experience wow animate__animated animate__fadeInUp animate__delay-2s">
         <figure class="bg-primary">
           <img src="assets/img/icons/recomendado.png" alt="recomend">
         </figure>
@@ -442,7 +442,7 @@
           <br>
         </div>
       </article>
-      <article class="card-experience">
+      <article class="card-experience wow animate__animated animate__fadeInUp animate__delay-2s">
         <figure class="bg-primary">
           <img src="assets/img/icons/recomendado.png" alt="recomend">
         </figure>
@@ -458,7 +458,7 @@
           <br>
         </div>
       </article>
-      <article class="card-experience">
+      <article class="card-experience wow animate__animated animate__fadeInUp animate__delay-2s">
         <figure class="bg-primary">
           <img src="assets/img/icons/recomendado.png" alt="recomend">
         </figure>
@@ -474,7 +474,7 @@
           <br>
         </div>
       </article>
-      <article class="card-experience">
+      <article class="card-experience wow animate__animated animate__fadeInUp animate__delay-2s">
         <figure class="bg-primary">
           <img src="assets/img/icons/recomendado.png" alt="recomend">
         </figure>
@@ -539,11 +539,12 @@
           &nbsp;Subscribe to be informed about our services, products and important developments in the world of IT.
         </p>
         <br>
-        <form action="#">
-          <input type="text" placeholder="Your Email Addres"
-            class="wow animate__animated animate__fadeInUp  animate__delay-2s">
-          <a href="#"
-            class="btn primary no-decoration text-center wow animate__animated animate__fadeInUp  animate__delay-2s">
+        <form name="form_footer">
+          <input type="mail" placeholder="Your Email Addres" class="wow animate__animated animate__fadeInUp  animate__delay-2s" name="email" required>
+          <small class="alert_footer">
+            ¡Complete todos los campos!
+          </small>
+          <a class="btn primary no-decoration text-center wow animate__animated animate__fadeInUp  animate__delay-2s" id="btn_footer">
             Subscribe <i class="fa-solid fa-arrow-right"></i>
           </a>
         </form>
@@ -581,6 +582,19 @@
   <i class="fa-solid fa-caret-up" id="arrow_up"></i>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/scroll.js"></script>
+  <script>
+    /*  FOOTER FORM */
+    $("#btn_footer").click(() => {
+      if (document.form_footer.email.value === '') {
+        $(".alert_footer").css("opacity", 1).text("¡Complete todos los campos!");
+        return 0;
+      }
+      $(".alert_footer").css("opacity", 1)
+        .css("color", "white")
+        .text("¡Datos enviados!");
+      return 1;
+    });
+  </script>
 </body>
 
 </html>

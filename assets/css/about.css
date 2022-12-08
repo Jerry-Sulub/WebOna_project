@@ -658,3 +658,9 @@ footer
     cursor: pointer;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
 }
+.alert_footer
+{
+    opacity: 0;
+    color: white;
+    transition: all 1s;
+}

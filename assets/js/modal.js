@@ -1,5 +1,5 @@
 /*Modal*/
-$("#btn_modal").click(()=>{
+$(".btn_modal").click(()=>{
     $("#modal").css('display', 'flex');
   });
 

@@ -460,45 +460,50 @@ header nav figure
     border: 1px white solid;
     border-radius: 5px;
     padding: 20px;
-    height: 350px;
+    height: 250px;
+
+    transition: all 1s;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.item-solutions article figure
+{
+    margin: auto;
+    width: 80px;
+    background-color: var(--primary);
+}
+.item-solutions article figure i
+{
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+}
+.item-solutions article:hover
+{
+    transform: rotateY(180deg);
+}
+.back-solution
+{
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    backface-visibility: hidden;
+}
+.front-solution
+{
+    position: absolute;
+    backface-visibility: hidden;
+
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    gap: 20px;
+    gap: 10px;
 
-    transition: all 1s;
-}
-.item-solutions article figure
-{
-    width: 80px;
-    background-color: white;
-
-    transition: all 1s;
-}
-.item-solutions article h3, .item-solutions article p
-{
-    transition: all 1s;
-}
-.item-solutions article:hover
-{
-    transform: rotate3d(0,1,0, 180deg);
-}
-.item-solutions article:hover p,
-.item-solutions article:hover h3,
-.item-solutions article:hover .btn
-{
-    transform: rotate3d(0,1,0, -180deg);
-}
-.item-solutions article .btn
-{
-    transition: all 1s;
-}
-.item-solutions article:hover figure
-{
-    display: none;
 }
 /* News */
 .header-news figure
@@ -1048,6 +1053,20 @@ footer
     right: 20px;
     color: var(--gray);
     cursor: pointer;
+}
+
+.alert
+{
+    opacity: 0;
+    color: red;
+    transition: all 1s;
+}
+
+.alert_footer
+{
+    opacity: 0;
+    color: white;
+    transition: all 1s;
 }
 
 @keyframes spin {

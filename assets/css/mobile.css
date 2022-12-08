@@ -212,4 +212,22 @@
     {
         padding: 20px;
     }
+    .back-solution, .front-solution
+    {
+        position: static;
+    }
+    .front-solution
+    {
+        padding-bottom: 20px;
+    }
+    .back-solution
+    {
+        padding-top: 20px;
+        transform: rotateY(0deg);
+        border-top: 1px white solid;
+    }
+    .item-solutions article
+    {
+        height: 450px;
+    }
 }
