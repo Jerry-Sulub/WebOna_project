@@ -45,7 +45,7 @@
   <!-- Aside Mobile -->
   <aside id="two">
     <figure>
-      <a href="/">
+      <a href="/" name="demo">
       <img src="assets/img/logo.png" alt="logo">
       </a>
       <ul>
@@ -143,6 +143,47 @@
       </div>
     </nav>
   </header>
+  <!-- Modal -->
+  <section class="modal" id="modal">
+    <article>
+      <i class="fa-solid fa-rectangle-xmark" id="close_modal"></i>
+      <figure>
+        <img src="assets/img/logo.png" alt="logo">
+      </figure>
+      <form  class="modal-form" name="request_service">
+        <select name="services" id="service">
+          <option value="Default">
+            Select Option
+          </option>
+          <option value="Server">
+            Server and Storage
+          </option>
+          <option value="Support">
+            IT Support Services
+          </option>
+          <option value="Desktop">
+            Desktop and Server
+          </option>
+          <option value="Network">
+            Network & Security
+          </option>
+          <option value="Cloud">
+            Cloud Services
+          </option>
+          <option value="Tracing">
+            Tracing Solutions
+          </option>
+        </select>
+        <input type="text" placeholder="Full Name" name="name" required>
+        <input type="email" placeholder="Email Address" name="email" required>
+        <input type="text" placeholder="Phone Number" name="phone" required>
+        <a href="#" class="btn" id="send">
+          Submit Form
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </form>
+    </article>
+  </section>
   <!-- Slide -->
   <section class="slide">
     <div class="callbacks_container">
@@ -156,7 +197,7 @@
             <small>
               We are at your service for all your IT solutions.
             </small>
-            <a href="#" class="btn bg-primary white no-decoration">
+            <a href="/about.html" class="btn bg-primary white no-decoration">
               Learn More
               <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -228,7 +269,7 @@
       <h1 class="wow animate__animated animate__slideInLeft animate__delay-2s">
         We encourage you to review our Best IT Solutions for Business, Personal individuals.
       </h1>
-      <a href="#" class="btn white no-decoration wow animate__animated animate__slideInRight animate__delay-2s">
+      <a class="btn white no-decoration wow animate__animated animate__slideInRight animate__delay-2s" id="btn_modal">
         Request a service
         <i class="fa-solid fa-arrow-right"></i>
       </a>
@@ -598,54 +639,36 @@
       © 2022 Webona - All Rights Reserved.
     </div>
   </footer>
+  <i class="fa-solid fa-caret-up" id="arrow_up"></i>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/acordeon.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/scroll.js"></script>
   <script>
-    $(".mas1").toggleClass("desaparecer");
-    //ACORDEON
-    $(".titulo1").click(function () {
-      $(".contenido1").slideToggle();
-      $(".mas1").toggleClass("desaparecer");
-    });
-
-    $(".titulo2").click(function () {
-      $(".contenido2").slideToggle();
-      $(".mas2").toggleClass("desaparecer");
-    });
-
-    $(".titulo3").click(function () {
-      $(".contenido3").slideToggle();
-      $(".mas3").toggleClass("desaparecer");
-    });
-
-    $(".titulo4").click(function () {
-      $(".contenido4").slideToggle();
-      $(".mas4").toggleClass("desaparecer");
-    });
-
-    let desk = 0;
-    $("#nav-desk").click(() => {
-      if( desk == 0 )
+    $("#send").click(()=>{
+      if(document.request_service.services.value==='Default')
       {
-        $("#one").css('left', '0');
-        desk = 1;
-      }else
-      {
-        $("#one").css('left', '-200%');
-        desk = 0;
+        alert('Por favor, elija una opción');
       }
-    })
-
-    $("#nav-mob").click(() => {
-      if( desk == 0 )
+      else
       {
-        $("#two").css('left', '0');
-        desk = 1;
-      }else
-      {
-        $("#two").css('left', '-200%');
-        desk = 0;
+        if(document.request_service.name.value === '')
+        {
+          alert('Proporcione un nombre');
+        }
+        else
+        {
+          if(document.request_service.phone.value === '')
+          {
+            alert('Proporcione un número');
+          }
+          else
+          {
+            alert(document.request_service.name.value);
+          }
+        }
       }
-    })
-    
+    });
   </script>
 </body>
 
